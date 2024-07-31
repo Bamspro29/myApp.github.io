@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Login from './components/login/Login';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Inscription from './components/inscription/Inscription';
+import Mdpf from './components/login/Mdpf';
+import Dashboard from './components/Dashboard';
+import Sidebar from './components/Sidebar/Sidebar';
+import Navbar from './components/Navbar/Navbar';
+import Hotelist from './components/Hotelist';
+import Hoteliew from './components/Hoteliew';
+import FormhandleShow from './components/FormhandleShow';
+import './index.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+     
+      <main className='bg'>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/inscription" element={<Inscription />} />
+          <Route path="/Mdpf" element={<Mdpf />} />
+          <Route path="/sidebar" element={<Sidebar />} />
+          <Route path="/navbar" element={<Navbar />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/Hotellist" element={<Hotelist />} />
+          <Route path="/hoteliew" element={<Hoteliew />} />
+          <Route path="/formhandleShow" element={<FormhandleShow />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 
