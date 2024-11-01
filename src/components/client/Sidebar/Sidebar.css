@@ -1,0 +1,49 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+.SB {
+  background: #55595C;
+  
+
+  }
+.DSB {
+  background: white;
+  
+
+  }
+.per {
+  max-height: max-content;
+
+  }
+  
+  /* .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-link {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar-link a {
+    display: block;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-link a:hover {
+    background-color: #718096;
+  }
+  
+  @media (max-width: 640px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
+  } */
